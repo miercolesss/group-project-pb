@@ -1,26 +1,32 @@
 class Bike:
     def __init__(self, number, is_electric=False):
         """Початкова ініціалізація велосипеда: номер і тип (звичайний чи електричний)."""
-        pass
+        self.number = number
+        self.is_electric = is_electric
 
     def get_price_per_minute(self):
         """Повертає вартість хвилини: 5 грн для ел, 2 грн для звичайного."""
-        pass
-
+        if selfe is electric:
+            return 5
+        else:
+            return 2
 
 class Station:
     def __init__(self, name):
         """Початкова ініціалізація станції: назва та порожній список велосипедів."""
-        pass
+        self.name = name
+        self.bikes = []
 
     def add_bike(self, bike):
         """Додає велосипед на станцію."""
-        pass
+        self.bikes.append(bike)
 
     def rmv_bike(self):
         """Знімає велосипед зі станції (повертає об'єкт велосипеда або None, якщо їх немає)."""
-        pass
+        if len(self.bikes) > 0:
+            return self.bikes.pop(0)
+        return None
 
     def get_bikes_count(self):
         """Повертає кількість велосипедів на станції."""
-        pass
+        return len(self.bikes)
