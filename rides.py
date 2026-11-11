@@ -3,7 +3,8 @@ PRICE_ELECTRIC_BIKE = 5
 
 class Rides:
     def __init__(self):
-        pass
+        self.total_revenue = 0 #виручка
+        
     def calculate_cost(self, bike, time):
         if bike.is_electric:
             price = PRICE_ELECTRIC_BIKE
