@@ -16,6 +16,30 @@ def main():
 
     olya = Client("Оля", 100)
     taras = Client("Тарас", 100)
+    rides = Rides()
+
+    success, info = rides.trip_details(taras, station_b, station_a, 5)
+    show_result(taras, success, info)
+
+    success, info = rides.trip_details(olya, station_b, station_a, 10)
+    show_result(olya, success, info)
+    assert not success
+
+    success, info = rides.trip_details(olya, station_a, station_b, 20)
+    show_result(olya, success, info)
+
+    success, info = rides.trip_details(taras, station_a, station_b, 10)
+    show_result(taras, success, info)
+
+    print("Баланс Олі:", olya.balance)
+    print("Баланс Тараса:", taras.balance)
+
+    print_report([station_a, station_b], rides)
+
+    assert station_a.get_bikes_count() + station_b.get_bikes_count() == 4
+    assert rides.total_revenue == 115
+    assert olya.balance == 60
+
 
     
 
