@@ -36,8 +36,11 @@
 | Дієслово | Кому належить (клас або окрема функція) | Чому |
 |---|---|---|
 | Взяти велосипед| Station / Trip | remove_bike() / take_bike() |
+| Повернути велосипед | Station / Trip | add_bike() / return_bike() |
+| Покататися (порахувати вартість) | Trip / Bike | get_price_per_minute() |
+| Списати гроші | Client | deduct_balance() |
+| Показати звіт | Admin / main | show_report() |
 
----
 
 ## Етап 2. Картки класів
 
