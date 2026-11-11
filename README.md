@@ -103,7 +103,7 @@
 |---|---|---|
 | bikes.py | Роль 1: Марія Борисюк| класи `Bike` (number, is_electric, `get_price_per_minute()`) і `Station` (name, bikes, `add_bike()`, `remove_bike()`, `get_bikes_count()`) |
 | clients.py | Роль 2:Звонарьова Васіліса  | клас `Client` (name, balance, `pay(amount)`) |
-| rides.py | Роль 3: Перегонцева Поліна | клас `Trip` (total_revenue, `process_trip(client, start_station, end_station, minutes)`) |
+| rides.py | Роль 3: Перегонцева Поліна | клас `Rides` (total_revenue, `process_trip(client, start_station, end_station, minutes)`) |
 | main.py | Роль 4: Марія Костогриз| функція `main()`, тестові дані, звіт адміністратора, 2–3 перевірки через `assert` |
 
 ---
@@ -142,8 +142,8 @@
 ```
 
 ### Блок 1. Архітектура
-- Які у нас класи:
-- Файли і власники:
+- Які у нас класи: Station, Bike, Client, Rides
+- Файли і власники: station.py(Борисюк Марія) customer.py(Звонарьова Васіліса) rides.py(Перегонцева Поліна) main.py(Марія Костогриз)
 
 ### Блок 2. Демо
 - Помилкова дія і реакція програми:
