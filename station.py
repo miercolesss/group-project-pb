@@ -6,7 +6,7 @@ class Bike:
 
     def get_price_per_minute(self):
         """Повертає вартість хвилини: 5 грн для ел, 2 грн для звичайного."""
-        if selfe is electric:
+        if self.is_electric:
             return 5
         else:
             return 2
