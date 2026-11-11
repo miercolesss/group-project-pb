@@ -4,9 +4,7 @@ class Client:
         self.balance = balance
 
     def pay(self, amount):
-        """Списує гроші з балансу (повертає True, якщо успішно, або False, якщо не вистачає коштів)."""
         if self.balance >= amount:
             self.balance -= amount
             return True
-        else:
-            return False
+        return False
