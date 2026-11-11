@@ -21,7 +21,7 @@ class Station:
         """Додає велосипед на станцію."""
         self.bikes.append(bike)
 
-    def rmv_bike(self):
+    def remove_bike(self):
         """Знімає велосипед зі станції (повертає об'єкт велосипеда або None, якщо їх немає)."""
         if len(self.bikes) > 0:
             return self.bikes.pop(0)
