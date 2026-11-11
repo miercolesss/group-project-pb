@@ -103,7 +103,7 @@
 |---|---|---|
 | bikes.py | Роль 1: Марія Борисюк| класи `Bike` (number, is_electric, `get_price_per_minute()`) і `Station` (name, bikes, `add_bike()`, `remove_bike()`, `get_bikes_count()`) |
 | clients.py | Роль 2:Звонарьова Васіліса  | клас `Client` (name, balance, `pay(amount)`) |
-| trips.py | Роль 3: Перегонцева Поліна | клас `Trip` (total_revenue, `process_trip(client, start_station, end_station, minutes)`) |
+| rides.py | Роль 3: Перегонцева Поліна | клас `Trip` (total_revenue, `process_trip(client, start_station, end_station, minutes)`) |
 | main.py | Роль 4: Марія Костогриз| функція `main()`, тестові дані, звіт адміністратора, 2–3 перевірки через `assert` |
 
 ---
